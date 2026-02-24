@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+<product useFeatures="false" application="carbon.application" id="carbon.product" includeLaunchers="true" name="Carbon Product" uid="carbon.product.id" version="5.3.3-SNAPSHOT">
+    <configIni use="default"/>
+    <launcher name="eclipse"/>
+    <configurations>
+        <plugin autoStart="true" id="org.eclipse.update.configurator" startLevel="1"/>
+        <plugin autoStart="true" id="org.eclipse.equinox.simpleconfigurator" startLevel="1"/>
+        <plugin autoStart="true" id="org.eclipse.equinox.ds" startLevel="2"/>
+        <plugin autoStart="true" id="org.eclipse.equinox.common" startLevel="2"/>
+        <plugin autoStart="true" id="org.eclipse.core.runtime" startLevel="4"/>
+        <plugin autoStart="true" id="org.eclipse.equinox.p2.reconciler.dropins" startLevel="4"/>
+        <property name="org.eclipse.update.reconcile" value="false"/>
+        <property name="org.eclipse.equinox.simpleconfigurator.useReference" value="true"/>
+    </configurations>
+</product>

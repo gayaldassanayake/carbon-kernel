@@ -186,6 +186,8 @@
                             <goal>publish-product</goal>
                         </goals>
                         <configuration>
+                            <productConfigurationFile>${basedir}/src/carbon.product
+                            </productConfigurationFile>
                             <executable>
                                 ${basedir}/target/org.eclipse.equinox.executable_3.5.0.v20110530-7P7NFUFFLWUl76mart
                             </executable>
